@@ -1,0 +1,121 @@
+.table-container {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  font-family: Arial, sans-serif;
+}
+
+.table-container h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bank-details {
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  background-color: azure;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.bank-details p {
+  margin: 5px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+thead {
+  background-color: #4fa8e8; /* Blue */
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  color: #fff; /* White text for contrast */
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody tr:active {
+  background-color: #e0e0e0;
+}
+
+tbody td {
+  position: relative;
+}
+
+tbody td::before {
+  content: attr(data-label);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  padding: 12px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f5f5f5;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: right;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding: 12px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+    text-align: right;
+  }
+}
