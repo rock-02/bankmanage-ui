@@ -10,7 +10,7 @@ const BranchPage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/services/${id}`)
+      .get(`https://bankbackend-2.onrender.com/services/${id}`)
       .then((response) => {
         const servicesData = response.data;
         setServices(servicesData);

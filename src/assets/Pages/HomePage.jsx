@@ -9,7 +9,7 @@ const HomePage = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/branches/3")
+      .get("https://bankbackend-2.onrender.com/branches/3")
       .then((response) => {
         setBranches(response.data);
       })
