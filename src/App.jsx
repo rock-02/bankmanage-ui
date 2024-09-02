@@ -1,7 +1,7 @@
 import React from "react";
-import HomePage from "./assets/Pages/HomePage";
+import HomePage from "./Pages/HomePage";
 import { Route, Routes } from "react-router-dom";
-import BranchPage from "./assets/Pages/BranchPage";
+import BranchPage from "./Pages/BranchPage";
 
 const App = () => {
   return (
