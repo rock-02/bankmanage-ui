@@ -4,10 +4,7 @@ This template provides a minimal setup to get React working in Vite with Hot Mod
 
 ## Official Plugins
 
-Currently, two official plugins are available:
-
 - **[@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)**: Uses [Babel](https://babeljs.io/) for Fast Refresh.
-- **[@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)**: Uses [SWC](https://swc.rs/) for Fast Refresh.
 
 ## Screenshots
 
@@ -19,7 +16,7 @@ This image shows the main view of the application, including the bank name and a
 
 ### Image of Bank Details
 
-![alt text](image.png)
+![Bank Details](image.png)
 
 This screenshot provides a detailed view of bank information, including address, city, state, and phone number.
 
@@ -27,9 +24,15 @@ This screenshot provides a detailed view of bank information, including address,
 
 This image displays the services offered by a specific branch, showcasing the various features and options available to customers.
 
-![Services offered by branch](services.PNG)
+![Services Offered by Branch](services.PNG)
 
 ## Features
 
 - **Hot Module Replacement (HMR):** Fast refresh for a smoother development experience.
 - **ESLint:** Integrated linting to help maintain code quality.
+
+## Deployment
+
+The application is deployed on Vercel. You can view it live at the following link:
+
+[Bank Management UI](https://bankmanage-ui.vercel.app/)
